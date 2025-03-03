@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <form action="/kommentar" method="POST"> 
-        <label for="kallenavn">Kallenavn:</label> 
-        <input type="text" id="kallenavn" name="kallenavn" style="width: 97%; font-size: large;"required /> 
-        <br /><br /> 
-        <label for="epost">Epost:</label> 
-        <input type="email" id="epost" name="epost" style="width: 97%; font-size: large;" required /> 
-        <br /><br /> 
-        <label for="kommentar">Kommentar:</label> 
-        <input type="kommentar" id="kommentar" name="kommentar" style="width: 97%; font-size: large;" required /> 
-        <br /><br /> 
-        <button type="submit" class="submit-wrapper">Send</button> 
-    </form>
+    <p class="tittel-style"> Velkommen til denne unike nettsiden</p>
+    <div class="form-div">
+        <form action="/kommentar" method="POST" class="form-style"> 
+            <label for="kallenavn">Kallenavn:</label> 
+            <input type="text" id="kallenavn" name="kallenavn" style="width: 97%; font-size: large;"required /> 
+            <br /><br /> 
+            <label for="epost">Epost:</label> 
+            <input type="email" id="epost" name="epost" style="width: 97%; font-size: large;" required /> 
+            <br /><br /> 
+            <label for="kommentar">Kommentar:</label> 
+            <input type="kommentar" id="kommentar" name="kommentar" style="width: 97%; font-size: large;" required /> 
+            <br /><br /> 
+            <button type="submit" class="submit-wrapper">Send</button> 
+        </form>
+    </div>
 </body>
 </html>
