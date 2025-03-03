@@ -6,9 +6,8 @@ const path = require('path');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res)=>{
-    res.status(200);
-    res.send("Welcome to root URL of Server");
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'html', 'forside.html'));
 });
 
 app.listen(PORT, (error) =>{
